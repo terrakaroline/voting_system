@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+}
+body h1 {
+    color: white;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.img-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.img-container img {
+    width: 240px;
+}
+
+.img-container img:hover {
+    cursor: pointer;
+}
+
+.botao-votar {
+    align-self: center;
+    width: 100px;
+    background-color: rgb(143, 0, 187);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.botao-votar:hover {
+    background-color: rgb(185, 48, 226);
+    cursor: pointer;
+}
+
+.selecionado {
+    border: 2px solid red;
+}
+
+/*ESTILOS DO RESULTADO DA VOTAÇÃO*/
+.resultado {
+    display: flex;
+    flex-direction: column;
+}
+table {
+    color: white;
+    background-color: rgb(143, 0, 187);
+    font-size: 24px;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+
+.retornar {
+    text-decoration: none;
+    align-self: center;
+    width: 200px;
+    background-color: rgb(143, 0, 187);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.retornar:hover {
+    background-color: rgb(185, 48, 226);
+    cursor: pointer;
+}
+
+td {
+    padding: 40px;
+    border: 2px solid white;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+}
+.visualizar-resultados {
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o anime mais popular?</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Escolha o seu anime favorito ou que já tenha ouvido falar anteriormente</h1>
+
+    <form class="form" action="/votar" method="post">
+        <div class="img-container">
+            <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/35e4ac6339f5fdcc164160a5755790cd.jpe" alt="Dragon ball" data-tipo="candidato" data-candidato="Dragon ball">
+            <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpe" alt="Naruto" data-tipo="candidato" data-candidato="Naruto">
+            <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/323c82257b2f6567fabbb7bd55bfa753.jpe" alt="Shingeki no Kyojin" data-tipo="candidato" data-candidato="Shingeki no Kyojin">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202106/1704/JzL1NLQvok7Pghe9W5PP2XNV.png" alt="Demon Slayer" data-tipo="candidato" data-candidato="Demon Slayer">
+            <img src="https://images.justwatch.com/poster/259490108/s592/death-note" alt="Death note" data-tipo="candidato" data-candidato="Death note">
+        </div>
+
+        <input type="hidden" name="candidato" value="">
+        <input type="submit" class="botao-votar" value="Votar">
+    </form>
+    <div class="link-container"><a class="visualizar-resultados" href="/resultados">Visualizar resultados</a></div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

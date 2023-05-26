@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="resultado">
+    <h1>Resultados da Votação</h1>
+    <table>
+        <tr>
+            <th>Candidato</th>
+            <th>Votos</th>
+        </tr>
+        {% for candidato, votos in candidatos.items() %}
+        <tr>
+            <td>{{ candidato }}</td>
+            <td>{{ votos }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a class="retornar" href="/">Voltar para a votação</a>
+</body>
+</html>
